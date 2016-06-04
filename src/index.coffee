@@ -9,7 +9,7 @@ randomString = (len=8) ->
 
 module.exports = (address) ->
     connected$ = KefirBus()
-    connected$.onValue -> alert 'connected'
+    connected$.onValue -> console.log "[#{address}] Connected"
     message$ = KefirBus()
 
     ws = null
@@ -19,7 +19,7 @@ module.exports = (address) ->
         ws.onopen = -> connected$.emit true
 
         ws.onclose = ->
-            alert 'closed'
+            console.log "[#{address}] Closed"
             connect()
 
         ws.onmessage = ({data}) ->
