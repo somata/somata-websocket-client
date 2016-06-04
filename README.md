@@ -1,6 +1,6 @@
 # somata-websocket-client
 
-Client for use with [somata-websocket-server](https://github.com/somata/somata-websocket-server). Remote calls and subscriptions are returned as [Kefir](https://github.com/rpominov/kefir) streams.
+Make Somata service calls and subscriptions from the browser using native WebSocket (which means it works with React Native). Pairs well with [somata-websocket-server](https://github.com/somata/somata-websocket-server). Remote calls and subscriptions are returned as [Kefir](https://github.com/rpominov/kefir) streams.
 
 ## Installation
 
@@ -10,7 +10,7 @@ npm install somata-websocket-client
 
 ## Usage
 
-Create a client by providing an address to connect to. Use `client.connected$` to wait until the connection is established.
+Create a client by providing the connection address. Use `client.connected$` to wait until the connection is established.
 
 ```coffee
 somata = require('somata-websocket-client')
