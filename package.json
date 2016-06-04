@@ -1,0 +1,27 @@
+{
+    "name": "somata-websocket-client",
+    "version": "0.1.0",
+    "description": "Client for somata websocket bridge",
+    "homepage": "http://github.com/somata/somata-websocket-client",
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/somata/somata-websocket-client.git"
+    },
+    "author": {
+        "name": "Sean Robertson",
+        "url": "http://sprobertson.com/"
+    },
+    "keywords": [
+        "somata",
+        "websockets"
+    ],
+    "main": "lib/index.js",
+    "scripts": {
+        "build": "coffee -o lib -c src"
+    },
+    "dependencies": {
+        "kefir": "3.2.x",
+        "kefir-bus": "1.0.x"
+    }
+}
+
