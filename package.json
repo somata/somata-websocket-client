@@ -1,6 +1,6 @@
 {
     "name": "somata-websocket-client",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Client for somata websocket bridge",
     "homepage": "http://github.com/somata/somata-websocket-client",
     "repository": {
