@@ -14,7 +14,7 @@ Create a client by providing the connection address. Use `client.connected$` to 
 
 ```coffee
 somata = require('somata-websocket-client')
-client = somata('ws://192.168.0.115:5555')
+client = somata('ws://localhost:5555')
 
 client.connected$.onValue ->
     client.remote('hello', 'sayHello').onValue (response) ->
